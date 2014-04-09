@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	xRTML Demo: Broadcast/Execute
+</title>
+
+     <script type="text/javascript" src="./sender_files/xrtml-3.1.0.js"></script><script type="text/javascript" src="./sender_files/ortc.js"></script>  
+    
+    <link href="http://www.xrtml.org/demos/css/styles.css" rel="stylesheet">
+    <script type="text/javascript">
+        xRTML.Config.debug = true;
+
+        function onSubscribed() {
+            document.getElementById("spanRT").className = " rt on";
+        };
+
+        function connectionLost() {
+            document.getElementById("spanRT").className = " rt off";
+        };
+
+        var connectionConfig = {
+            id: 'ACME_connection',
+            appKey: 'BCLjCR',
+            authToken: 'dummyToken',
+            url: 'http://ortc-developers.realtime.co/server/2.1',
+            channels: [{ name: 'my_channel'}],
+            onSubscribe: window.onSubscribed,
+            onUnsubscribe: connectionLost,
+            onDisconnect: connectionLost
+        }
+        xRTML.ready(function () {
+            xRTML.ConnectionManager.create(connectionConfig);
+        });
+    </script>
+
+    
+    <link href="./sender_files/broadcastExecute.css" rel="stylesheet">
+    <script type="text/javascript" src="./sender_files/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="./sender_files/jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript" src="./sender_files/jscolor.js"></script>
+	<script type="text/javascript" src="./sender_files/IbtRealTimeSJCore.js"></script>
+
+    <script type="text/javascript">
+        function getSizeChange() {
+            return xRTML.MessageManager.create({ trigger: 'broadcastChangesTrigger', data: { action: 'size', arg: $("#sizeinput").val()} });
+        }
+
+        function getColorChange() {
+            return xRTML.MessageManager.create({ trigger: 'broadcastChangesTrigger', data: { action: 'color', arg: "#" + $("#colorinput").val()} });
+        }
+        
+        function getTransformation() {
+            return xRTML.MessageManager.create({ trigger: 'broadcastChangesTrigger', data: { action: 'transform', arg: $("#selectedTransform")[0].selectedIndex} });
+        }
+
+        function getEffect() {
+            return xRTML.MessageManager.create({ trigger: 'broadcastChangesTrigger', data: { action: 'effect', arg: $("#selectedEffect")[0].selectedIndex} });
+        }
+
+        function getFade() {
+            return xRTML.MessageManager.create({ trigger: 'broadcastChangesTrigger', data: { action: 'fade' } });
+        }
+
+        function getRotation() {
+            return xRTML.MessageManager.create({ trigger: 'broadcastChangesTrigger', data: { action: 'rotation', arg: $("#rotationSelected")[0].selectedIndex } });
+
+        }
+
+        function getBackground() {
+            return xRTML.MessageManager.create({ trigger: 'broadcastChangesTrigger', data: { action: 'background', arg: "#" + $("#backgroundcolorinput").val()} });
+        }
+
+        function getAddModule() {
+            return xRTML.MessageManager.create({ trigger: 'broadcastChangesTrigger', data: { action: 'addmodule', arg: $("#selectedModule")[0].selectedIndex } });
+        }
+
+        xRTML.load(function () {
+            xRTML.TagManager.create({
+                name: 'Broadcast',
+                id: 'broadcast001',
+                connections: ["ACME_connection"],
+                channelid: 'my_channel',
+                triggers: ["broadcastChangesTrigger"],
+                dispatchers: [{
+                    target: "#sizebutton",
+                    event: "click",
+                    callback: "getSizeChange",
+                    id: "d002"
+                }, {
+                    target: "#colorbutton",
+                    event: "click",
+                    callback: "getColorChange",
+                    id: "d003"
+                }, {
+                    target: "#transformbutton",
+                    event: "click",
+                    callback: "getTransformation",
+                    id: "d004"
+                }, {
+                    target: "#effectbutton",
+                    event: "click",
+                    callback: "getEffect",
+                    id: "d005"
+                }, {
+                    target: "#rotationbutton",
+                    event: "click",
+                    callback: "getRotation",
+                    id: "d006"
+                }, {
+                    target: "#backgroundcolorbutton",
+                    event: "click",
+                    callback: "getBackground",
+                    id: "d007"
+                }, {
+                    target: "#addmodulebutton",
+                    event: "click",
+                    callback: "getAddModule",
+                    id: "d008"
+                }]
+            });
+        });
+    </script>
+<script type="text/javascript" src="./sender_files/IbtRealTimeSJ.js"></script>
+</head>
+<body>
+   
+
+                <div class="broadcastExecuteContent">
+                    <h2>Change the font size</h2>
+                    <span>
+                    <input id="sizeinput" class="text" type="text" value="30px">
+                    <input id="sizebutton" class="button" type="button" value="Send">                                
+                    </span>           
+                </div>                
+
+                <div class="broadcastExecuteContent">
+                    <h2>Change the font color</h2>   
+                    <span>        
+                    <input id="colorinput" class="text color" type="text" autocomplete="off" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+                    <input id="colorbutton" class="button" type="button" value="Send">                                
+                    </span>
+                </div>         
+
+                <div class="broadcastExecuteContent">
+                    <h2>Font transform</h2>                               
+                    <select id="selectedTransform">
+                        <option selected="selected" value="uppercase">Uppercase</option>
+                        <option value="lowercase">Lowercase</option>
+                        <option value="capitalize">Capitalize</option>
+                        <option value="none">None</option>                        
+                    </select>                    
+                    <input id="transformbutton" class="button" type="button" value="Send">                                
+                </div>         
+
+                <div class="broadcastExecuteContent">
+                    <h2>Effects</h2>                               
+                    
+                    <select id="selectedEffect">
+                        <option selected="selected" value="bounce">Bounce</option>
+                        <option value="shake">Shake</option>
+                        <option value="highlight">Highlight</option>
+                        <option value="pulsate">Pulsate</option>
+                    </select>                    
+                    <input id="effectbutton" class="button" type="button" value="Send">                                
+                </div>                           
+
+                <div class="broadcastExecuteContent">
+                    <h2>Rotation</h2>
+                    <select id="rotationSelected">
+                        <option selected="selected" value="0">0</option>
+                        <option value="45">45</option>
+                        <option value="90">90</option>
+                        <option value="135">135</option>
+                        <option value="180">180</option>
+                        <option value="225">225</option>
+                        <option value="270">270</option>
+                        <option value="315">315</option>
+                        <option value="360">360</option>
+                    </select>                          
+                    
+                    <input id="rotationbutton" class="button" type="button" value="Send">                                
+                </div>
+
+                <div class="broadcastExecuteContent">
+                    <h2>Change the background color</h2>  
+                    <span>         
+                    <input id="backgroundcolorinput" class="text color" type="text" autocomplete="off" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+                    <input id="backgroundcolorbutton" class="button" type="button" value="Send">                                
+                    </span>
+                </div>
+   
+   
+				  <div class="broadcastExecuteContent">
+                    <h2>ADD MODULE</h2>                              
+                    <select id="selectedModule">
+                        <option selected="selected" value="0">簡介</option>
+                        <option value="1">相簿</option>
+                        <option value="2">我的最愛</option>        
+                    </select>                    
+                    <input id="addmodulebutton" class="button" type="button" value="Send">                                
+                </div>     
+</body></html>

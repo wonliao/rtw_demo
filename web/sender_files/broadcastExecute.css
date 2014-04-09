@@ -1,0 +1,290 @@
+﻿/* ------------------ Start Fonts ------------------ */
+@font-face { font-family: 'OpenSansLight'; src: url('fonts/OpenSans-Light-webfont.eot'); src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Light-webfont.woff') format('woff'), url('fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'OpenSansLightItalic'; src: url('fonts/OpenSans-LightItalic-webfont.eot'); src: url('fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-LightItalic-webfont.woff') format('woff'), url('fonts/OpenSans-LightItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'OpenSansRegular'; src: url('fonts/OpenSans-Regular-webfont.eot'); src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Regular-webfont.woff') format('woff'), url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'OpenSansItalic'; src: url('fonts/OpenSans-Italic-webfont.eot'); src: url('fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Italic-webfont.woff') format('woff'), url('fonts/OpenSans-Italic-webfont.ttf') format('truetype'), url('fonts/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'OpenSansSemibold'; src: url('fonts/OpenSans-Semibold-webfont.eot'); src: url('fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('fonts/OpenSans-Semibold-webfont.ttf') format('truetype'), url('fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'OpenSansSemiboldItalic'; src: url('fonts/OpenSans-SemiboldItalic-webfont.eot'); src: url('fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-SemiboldItalic-webfont.woff') format('woff'), url('fonts/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'OpenSansBold'; src: url('fonts/OpenSans-Bold-webfont.eot'); src: url('fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Bold-webfont.woff') format('woff'), url('fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'OpenSansBoldItalic'; src: url('fonts/OpenSans-BoldItalic-webfont.eot'); src: url('fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-BoldItalic-webfont.woff') format('woff'), url('fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'OpenSansExtrabold'; src: url('fonts/OpenSans-ExtraBold-webfont.eot'); src: url('fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-ExtraBold-webfont.woff') format('woff'), url('fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'), url('fonts/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'OpenSansExtraboldItalic'; src: url('fonts/OpenSans-ExtraBoldItalic-webfont.eot'); src: url('fonts/OpenSans-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'), url('fonts/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-ExtraBoldItalic-webfont.svg#OpenSansExtraboldItalic') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BebasNeueRegular'; src: url('fonts/BebasNeue-webfont.eot'); src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/BebasNeue-webfont.woff') format('woff'), url('fonts/BebasNeue-webfont.ttf') format('truetype'), url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg'); font-weight: normal; font-style: normal; }
+/* ------------------- End Fonts ------------------- */
+
+.broadcastExecute {
+    background-color: #EBF0F5; 
+    float: left;    
+    margin: 20px 20px 0 0;    
+    width: 940px;
+    height: 530px;
+}
+
+
+#specialMenu{
+    display:none;
+    background-color: #EBF0F5; 
+    float: left;    
+    margin: 20px 20px 0 0;    
+    width: 940px;
+    height: 250px;
+}
+
+
+.broadcastExecuteContent {
+    float:left;
+    padding:2px;
+    height: 130px;
+    border:1px solid #ccc;
+    margin: 20px 55px;
+    width:350px;   
+    align:left; 
+}
+
+.broadcastExecuteContent h2 {
+    background-color: #B4C8D2;
+    clear: both;
+    color: #002346;
+    font: 24px/27px 'BebasNeueRegular',arial,sans-serif;    
+    padding: 8px 8px 4px;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+    display:inline-block;
+    width:334px;
+}
+
+.broadcastExecuteContent input.text{
+    background-color: #fff;
+    border: 2px solid #B4C8D2;
+    color:#666 !important;    
+    float: left;
+    font: 16px/18px 'OpenSansRegular',arial,sans-serif;
+    margin: 10px 30px !important;  
+    padding: 3px;
+    width: 115px;    
+    display:inline;    
+}
+
+
+.broadcastExecuteContent input.button{
+    background-color: #002346;
+    border-color: #002346;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font: 24px/24px 'BebasNeueRegular',arial,sans-serif;
+    margin: 10px 0 0;
+    padding: 3px;
+    width: 125px;
+    display: inline;
+}
+
+#uppercasebutton {    
+    margin: 10px 110px !important;    
+}
+
+#selectedEffect {
+    margin: 10px 30px;   
+    background:#fff;
+    float:left;
+    font-size: 17px !important;
+    border: 2px solid #B4C8D2 !important;
+    height:30px;
+    width: 125px;
+    font-family: 'OpenSansRegular';
+    color:#666;    
+}
+
+#selectedEffect option {
+    border-left: 2px solid #B4C8D2 !important;
+    border-right: 2px solid #B4C8D2 !important;
+    font-family: 'OpenSansRegular';
+    color:#666;    
+    font-size: 17px !important;
+}
+
+#selectedTransform {
+    margin: 10px 30px;   
+    background:#fff;
+    float:left;
+    font-size: 17px !important;
+    border: 2px solid #B4C8D2 !important;
+    height:30px;
+    width: 125px;
+    font-family: 'OpenSansRegular';
+    color:#666;    
+}
+
+#selectedTransform option {
+    border-left: 2px solid #B4C8D2 !important;
+    border-right: 2px solid #B4C8D2 !important;
+    font-family: 'OpenSansRegular';
+    color:#666;   
+    font-size: 17px !important; 
+}
+
+#rotationSelected {
+    margin: 10px 30px;   
+    background:#fff;
+    float:left;
+    font-size: 17px !important;
+    border: 2px solid #B4C8D2 !important;
+    height:30px;
+    width: 125px;
+    font-family: 'OpenSansRegular';
+    color:#666;   
+}
+
+#rotationSelected option {
+    border-left: 2px solid #B4C8D2 !important;
+    border-right: 2px solid #B4C8D2 !important;
+    font-size: 17px !important; 
+    font-family: 'OpenSansRegular';
+    color:#666;   
+}
+
+#selectedModule {
+    margin: 10px 30px;   
+    background:#fff;
+    float:left;
+    font-size: 17px !important;
+    border: 2px solid #B4C8D2 !important;
+    height:30px;
+    width: 125px;
+    font-family: 'OpenSansRegular';
+    color:#666;   
+}
+
+#selectedModule option {
+    border-left: 2px solid #B4C8D2 !important;
+    border-right: 2px solid #B4C8D2 !important;
+    font-size: 17px !important; 
+    font-family: 'OpenSansRegular';
+    color:#666;   
+}
+
+.news-box-new {
+    background-color: #FFFFFF;
+    float: left;    
+    margin: 20px 20px 0 0;
+    padding: 10px;
+    width: 280px;
+
+}
+
+.news-box-new p {
+
+}
+
+.rotatedElement0{
+    -moz-transform: rotate(0) scale(1);
+    -o-transform: rotate(0) scale(1);
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    /* IE8+ - must be on one line, unfortunately */    
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.00000000, M12=0.00000000, M21=0.00000000, M22=1.00000000,sizingMethod='auto expand')";
+    /* IE6 and 7 */    
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.00000000, M12=0.00000000, M21=0.00000000, M22=1.00000000,sizingMethod='auto expand');
+    /* To make the transform-origin be the middle of the object. */   
+
+ 
+}
+
+.rotatedElement45{
+    -moz-transform: rotate(45deg) scale(1);
+    -o-transform: rotate(45deg) scale(1);
+    -webkit-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    /* IE8+ - must be on one line, unfortunately */    
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865473, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865473, SizingMethod='auto expand')";      
+    /* IE6 and 7 */    
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865473, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865473, SizingMethod='auto expand');   
+    /* To make the transform-origin be the middle of the object. */   
+    margin-left: 5px;
+    margin-top: -70px;
+}
+
+.rotatedElement90{
+    -moz-transform: rotate(90deg) scale(1);
+    -o-transform: rotate(90deg) scale(1);
+    -webkit-transform: rotate(90deg) scale(1);
+    transform: rotate(90deg) scale(1);
+    /* IE8+ - must be on one line, unfortunately */ 
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-1.8369701987210297e-16, M12=-1, M21=1, M22=-1.8369701987210297e-16, SizingMethod='auto expand')";   
+    /* IE6 and 7 */ 
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=-1.8369701987210297e-16, M12=-1, M21=1, M22=-1.8369701987210297e-16, SizingMethod='auto expand');
+    /* To make the transform-origin be the middle of the object. */
+    margin-left: -3px; 
+    margin-top: -3px;
+}
+
+.rotatedElement135{
+    -moz-transform: rotate(135deg) scale(1);
+    -o-transform: rotate(135deg) scale(1);
+    -webkit-transform: rotate(135deg) scale(1);
+    transform: rotate(135deg) scale(1);
+    /* IE8+ - must be on one line, unfortunately */ 
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-0.7071067811865477, M12=-0.7071067811865475, M21=0.7071067811865475, M22=-0.7071067811865477, SizingMethod='auto expand')";
+    /* IE6 and 7 */ 
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=-0.7071067811865477, M12=-0.7071067811865475, M21=0.7071067811865475, M22=-0.7071067811865477, SizingMethod='auto expand');
+    /* To make the transform-origin be the middle of the object */
+    margin-left: -3px; 
+    margin-top: -3px;
+
+}
+
+.rotatedElement180{
+    -moz-transform: rotate(180deg) scale(1);
+    -o-transform: rotate(180deg) scale(1);
+    -webkit-transform: rotate(180deg) scale(1);
+    transform: rotate(180deg) scale(1);
+    /* IE8+ - must be on one line, unfortunately */ 
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-1, M12=1.2246467991473532e-16, M21=-1.2246467991473532e-16, M22=-1, SizingMethod='auto expand')";   
+    /* IE6 and 7 */ 
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=-1, M12=1.2246467991473532e-16, M21=-1.2246467991473532e-16, M22=-1, SizingMethod='auto expand');
+    /* To make the transform-origin be the middle of the object. */
+    margin-left: -3px; 
+    margin-top: -3px;
+}
+
+.rotatedElement225{
+    -moz-transform: rotate(225deg) scale(1);
+    -o-transform: rotate(225deg) scale(1);
+    -webkit-transform: rotate(225deg) scale(1);
+    transform: rotate(225deg) scale(1);
+    /* IE8+ - must be on one line, unfortunately */ 
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-0.7071067811865475, M12=0.7071067811865476, M21=-0.7071067811865476, M22=-0.7071067811865475, SizingMethod='auto expand')";   
+    /* IE6 and 7 */ 
+    filter: progid:DXImageTransform.Microsoft.Matrix( M11=-0.7071067811865475, M12=0.7071067811865476, M21=-0.7071067811865476, M22=-0.7071067811865475, SizingMethod='auto expand');
+    /* To make the transform-origin be the middle of the object. */
+    margin-left: -3px; 
+    margin-top: -3px;
+}
+
+.rotatedElement270{
+    -moz-transform: rotate(270deg) scale(1);
+     -o-transform: rotate(270deg) scale(1);
+     -webkit-transform: rotate(270deg) scale(1);
+     transform: rotate(270deg) scale(1);
+   /* IE8+ - must be on one line, unfortunately */ 
+   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=6.123233995736766e-17, M12=1, M21=-1, M22=6.123233995736766e-17, SizingMethod='auto expand')";
+   /* IE6 and 7 */ 
+   filter: progid:DXImageTransform.Microsoft.Matrix(M11=6.123233995736766e-17, M12=1, M21=-1, M22=6.123233995736766e-17, SizingMethod='auto expand');
+   /* To make the transform-origin be the middle of the object. */
+   margin-left: -3px; 
+   margin-top: -3px;
+}
+
+.rotatedElement315 {
+    -moz-transform: rotate(315deg) scale(1);
+     -o-transform: rotate(315deg) scale(1);
+     -webkit-transform: rotate(315deg) scale(1);
+     transform: rotate(315deg) scale(1);
+   /* IE8+ - must be on one line, unfortunately */ 
+   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865476, M12=0.7071067811865475, M21=-0.7071067811865475, M22=0.7071067811865476, SizingMethod='auto expand')";
+   /* IE6 and 7 */ 
+   filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865476, M12=0.7071067811865475, M21=-0.7071067811865475, M22=0.7071067811865476, SizingMethod='auto expand');
+   /* To make the transform-origin be the middle of the object. */
+   margin-left: -3px; 
+   margin-top: -3px;   
+}   
